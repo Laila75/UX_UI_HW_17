@@ -1,44 +1,78 @@
-body {
+html, body {
+    margin: 0px;
+    padding: 0px;
 }
 .navigation {
-    background-color: white;
     padding: 15px;
     display:flex;
-    max-width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 1em auto;
+
+}
+.headerBG {
+    background-image: url(../images/FadedBG.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 200px;
+    padding-top: 3em;
+
+
+
+}
+.inline-block li {
+    padding-left: 30px;
 }
 .Logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Logotitle {
     display: flex;
 }
 .MyLogoimage img{
     max-width: 100px;
     height: auto;
+    margin-right: 5px;
+
 }
 header li {
     display: inline-block;
-    align: auto;
-    padding: 1%;
     font-family: Arial, Helvetica, sans-serif;
     color: #1C307D;  
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #1C307D;  
 }
+.Logo h1{
+    margin-bottom: 2px;
+    
+}
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: #1C307D;  
 }
+.Logo h3{
+    margin-top: 2px;
+}
 .content {
     height: 100%;
     padding: 25px;
-    width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     Color: #5B5C61;
     text-align: center;
 }
 .MyPhoto img{
-    max-width: 50%;
+    max-width: 25%;
 }
 .ResumeButton {
     background-color: #6F1854;
@@ -48,17 +82,37 @@ h3 {
 footer {
     bottom: 0;
     background-color: #6F1854;
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer ul{
     padding: 25px;
-    width:auto;
-    margin-left:auto;
+    max-width: 1000px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 footer li {
+    display: flex;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
 }
-
+.email2 li{
+    padding-right: 50px;
+}
+.contacticon {
+    padding-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    
+}
+.contacticon img {
+    width: 100%;
+    height: auto;
+}
